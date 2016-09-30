@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Markus Petrykowski",
+  "main": "index.html",
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "tsc:w": "tsc -p src -w",
+    "stylusCompile:watch": "stylus -w -u nib src/assets/styles/main.styl",
+    "start": "concurrent \"npm run tsc:w\" \"npm run stylusCompile:watch\" \"node_modules/lite-server/bin/lite-server --baseDir ./src\"",
+    "lite": "node_modules/lite-server/bin/lite-server --baseDir ./src ",
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sittenstrolch/artiverse.git"
+  },
+  "author": "Markus Petrykowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sittenstrolch/artiverse/issues"
+  },
+  "homepage": "sittenstrolch.github.io",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^1.3.1",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
