@@ -9,7 +9,8 @@
     "stylusCompile:watch": "stylus -w -u nib src/assets/styles/main.styl",
     "start": "concurrent \"npm run tsc:w\" \"npm run stylusCompile:watch\" \"node_modules/lite-server/bin/lite-server --baseDir ./src\"",
     "lite": "node_modules/lite-server/bin/lite-server --baseDir ./src ",
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "updateMaster": "git subtree push --prefix src origin master"
   },
   "repository": {
     "type": "git",
