@@ -72,3 +72,19 @@ $('.contact-link').click(function(){
 
   clearInterval(mailAttention);
 })
+
+$('a').click(function(){
+  var classes = $(this).attr('class').split(/\s+/).filter(function(elem){return elem!='animate-fast'})
+  var network = classes[0]
+  classes.push('overlay')
+  classes = classes.map(function(elem){return "." + elem})
+  
+  var selector = classes.join('')
+
+  $(selector).removeClass('animate')
+  $('.tagline').removeClass('invisible')
+  $('.contact-link').removeClass('invisible')
+  $(selector + " > span").removeClass('animate-scale')
+  $('#cover').removeClass(network)
+  $('a').removeClass("decent")
+})

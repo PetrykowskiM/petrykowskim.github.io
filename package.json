@@ -7,7 +7,7 @@
     "tsc": "tsc -p src -w",
     "tsc:w": "tsc -p src -w",
     "stylusCompile:watch": "stylus -w -u nib src/assets/styles/main.styl",
-    "start": "concurrent \"npm run tsc:w\" \"npm run stylusCompile:watch\" \"node_modules/lite-server/bin/lite-server --baseDir ./src\"",
+    "start": "node_modules/.bin/concurrently \"npm run tsc:w\" \"npm run stylusCompile:watch\" \"node_modules/lite-server/bin/lite-server --baseDir ./src\"",
     "lite": "node_modules/lite-server/bin/lite-server --baseDir ./src ",
     "dev": "node app.js",
     "updateMaster": "git subtree push --prefix src origin master"
