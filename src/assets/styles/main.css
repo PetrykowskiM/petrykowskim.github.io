@@ -268,14 +268,11 @@ body {
   left: 50%;
   transform: translate3d(-50%, 0, 0);
 }
-#cover .contact-link {
+#cover .contact .contact-link {
   text-decoration: none;
   display: inline-block;
 }
-#cover .contact-link:hover {
-  cursor: pointer !important;
-}
-#cover .contact-link .email {
+#cover .contact .email {
   background: #3e5964;
   color: #fff;
   height: 4rem;
@@ -286,7 +283,7 @@ body {
   line-height: 3.8rem;
   font-size: 2rem;
 }
-#cover .contact-link .email:hover {
+#cover .contact .email:hover {
   cursor: pointer;
   background: #25a3d7;
 }

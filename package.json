@@ -10,7 +10,8 @@
     "start": "node_modules/.bin/concurrently \"npm run tsc:w\" \"npm run stylusCompile:watch\" \"node_modules/lite-server/bin/lite-server --baseDir ./src\"",
     "lite": "node_modules/lite-server/bin/lite-server --baseDir ./src ",
     "dev": "node app.js",
-    "updateMaster": "git subtree push --prefix src origin master"
+    "updateMaster": "git subtree push --prefix src origin master",
+    "mergeMaster": "git merge -s subtree master"
   },
   "repository": {
     "type": "git",
